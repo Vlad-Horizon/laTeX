@@ -1,0 +1,47 @@
+\newcommand{\titleLabJobNumber}{Номер лабораторної роботи} % Номер лабораторної роботи
+\newcommand{\titleLabThem}{Тема лабораторної роботи} % Тема лабораторної роботи
+\newcommand{\titleLabVariant}{Варіант} % Варіант
+\newcommand{\titleLabStudentName}{ПІБ студента} % ПІБ студента
+\newcommand{\titleLabTeachGender}{Перевірив / Перевірила} % Перевірив / Перевірила
+\newcommand{\titleLabTeachPosition}{Посада викладача} % Посада викладача
+\newcommand{\titleLabTeachName}{ПІБ викладача}  % ПІБ викладача
+
+\newcommand{\TitleLab}{
+  \thispagestyle{empty}
+
+  \begin{spacing}{1}
+    \begin{center}
+      Міністерство освіти та науки України\\
+      Вінницький національний технічний університет\\
+      Факультет менеджменту та інформаційної безпеки\\
+      Кафедра захисту інформації
+    \end{center}
+  \end{spacing}
+
+  \vfill
+
+  \begin{center}
+    {\bfseries Лабораторна робота №\titleLabJobNumber}\\
+    «\titleLabThem»\\
+    Варіант: \titleLabVariant
+  \end{center}
+
+  \vfill
+
+  \begin{flushright}
+    \begin{tabular}{@{}r@{}}
+      Виконав: ст. гр. УБ-21б                      \\
+      \titleLabStudentName                         \\
+      \titleLabTeachGender: \titleLabTeachPosition \\
+      \titleLabTeachName
+    \end{tabular}
+  \end{flushright}
+
+  \vfill
+
+  \begin{center}
+    м. Вінниця - \the\year
+  \end{center}
+
+  \newpage
+}

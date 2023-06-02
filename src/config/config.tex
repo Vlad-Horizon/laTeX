@@ -1,0 +1,21 @@
+\usepackage[T2A]{fontenc} % Форматування тексту
+\usepackage[utf8]{inputenc} % Кадіровка
+\usepackage[ukrainian]{babel} % Налаштування для розуміння укр
+\usepackage{tempora} % Шрифт
+\usepackage[a4paper, left=25mm, right=10mm, top=20mm, bottom=20mm]{geometry} % Налаштування відступів
+\usepackage{setspace} % Налаштування відступів тексту
+\usepackage{fancyhdr} % Номерація сторінок
+
+% Налаштування нумерації
+\pagestyle{fancy}
+\fancyhf{} % Очистити поточні налаштування
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Вимкнути лінію
+
+% Налаштування відступів
+\onehalfspacing
+\setstretch{1.5}
+
+\newcommand{\Config}{
+  \pagenumbering{arabic} % Тип нумерації
+}

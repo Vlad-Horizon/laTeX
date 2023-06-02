@@ -1,0 +1,49 @@
+\documentclass[14pt]{extarticle}
+
+% Config
+\input{./src/config/config.tex} % Config
+
+% ModulesMain
+\input{./src/modules/text/Tab.tex} % Відступ
+\input{./src/modules/text/B.tex} % Жирний
+\input{./src/modules/text/quotes1.tex} % Лапки «»
+\input{./src/modules/text/quotes2.tex} % Лапки ""
+\input{./src/modules/headers/h1.tex} % h1
+\input{./src/modules/headers/h2.tex} % h2
+\input{./src/modules/headers/h3.tex} % h3
+\input{./src/modules/img/Img.tex} % Img
+
+% Titles
+\input{./src/modules/titles/TitleLab.tex} % Титулка
+
+% PagesMain
+\input{./src/modules/content/content.tex} % Зміст
+\input{./src/pages/pagesMain/introduction.tex} % Вступ
+\input{./src/pages/pagesMain/1.tex} % 1
+\input{./src/pages/pagesMain/1.1.tex} % 1.1
+\input{./src/pages/pagesMain/1.2.tex} % 1.2
+\input{./src/pages/pagesMain/conclusion.tex} % Висновок
+
+% PagesLab
+\input{./src/pages/pagesLab/labPage.tex}
+
+% env
+\input{./env.tex} % Висновок
+
+% Document
+\begin{document}
+\Config % Глобальна конфігурація
+
+\TitleLab % Титулка для лаб
+
+% Lab
+\labPage
+
+% Main
+% \Content % Зміст
+% \introduction % Вступ
+% \1 % Розділ 1
+% \firstSub % 1.1
+% \secondSub % 1.2
+% \conclusion % Висновок
+\end{document}

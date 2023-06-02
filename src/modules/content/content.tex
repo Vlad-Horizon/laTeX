@@ -1,0 +1,85 @@
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{tocloft}
+\usepackage{hyperref}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black
+}
+
+% 
+% Налаштування змісту
+% 
+
+\titlecontents{section}
+[0pt]
+{}
+{} % \contentslabel{1em}
+{} % {\hspace*{-2.3}}
+{\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{subsection}
+[14pt]
+{}
+{}
+{}
+{\titlerule*[0.5pc]{.}\contentspage}
+
+\titlecontents{chapter}
+[0pt]
+{}
+{}
+{}
+{\titlerule*[0.5pc]{.}\contentspage}
+
+\setlength{\cftbeforetoctitleskip}{0pt} % Видалення пропуску перед підписом Зміст
+\setlength{\cftaftertoctitleskip}{0pt} % Видалення пропуску після підпису Зміст
+
+\renewcommand{\cfttoctitlefont}{\fontsize{14}{16}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\vspace{2em}}
+
+%  
+% Налаштування вигляду розділів
+% 
+
+\titleformat{\section}
+{\normalfont\fontsize{14}{16}\bfseries\filcenter}
+{}
+{0pt}
+{\MakeUppercase}
+
+\titlespacing*{\section}
+{0pt}
+{\baselineskip}
+{\baselineskip}
+
+% Налаштування вигляду підрозділів
+
+\titleformat{\subsection}
+{\normalfont\fontsize{14}{16}\bfseries}
+{}
+{1.25cm}
+{}
+
+\titlespacing*{\subsection}
+{0pt}
+{\baselineskip}
+{\baselineskip}
+
+% 
+% 
+% 
+
+\newcommand{\Content}{
+  \renewcommand{\contentsname}{\hfill\bfseries\MakeUppercase{Зміст}\hfill} % Центрування та великі літери для підпису Зміст
+  \tableofcontents
+  \thispagestyle{empty}
+  \newpage
+}
